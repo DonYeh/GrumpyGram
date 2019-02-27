@@ -20,8 +20,22 @@ body {
 
 .picture-frame {
   width: 150px;
+  position: absolute;
+  top: 150px;
 }
 
 .picture-frame img {
   width: 100%;
+}
+
+#one {
+  left: 50px;
+}
+
+#two {
+  left: 220px;
+}
+
+#three {
+  left: 400px;
 }
