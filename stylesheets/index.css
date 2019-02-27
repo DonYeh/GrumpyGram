@@ -19,23 +19,46 @@ body {
 }
 
 .picture-frame {
-  width: 150px;
-  position: absolute;
-  top: 150px;
+  width: 80%;
+  min-height: 200px;
+  padding: 10%;
+  border: 2px solid cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .picture-frame img {
   width: 100%;
+  /* height: 100%; */
+  /* padding: 10%;
+  /* padding-left: 20%; */
+  overflow: hidden;
 }
 
-#one {
-  left: 50px;
+.hamster-playground {
+  border: 5px solid gold;
+  display: flex;
+  flex-direction: column;
+  /*how to line up on main axis */
+  justify-content: flex-start;
+  /*how to line up on cross axis */
+  align-items: center;
+
+  min-height: 300px;
+  flex-wrap: wrap;
+  /* padding-left: 20%;
+  padding-right: 20%; */
 }
 
-#two {
-  left: 220px;
+/* it's like an if statement, but for CSS */
+@media screen and (min-width: 500px) {
+  body {
+    background: red;
+  }
 }
-
-#three {
-  left: 400px;
+@media screen and (min-width: 700px) {
+  body {
+    background: yellow;
+  }
 }
